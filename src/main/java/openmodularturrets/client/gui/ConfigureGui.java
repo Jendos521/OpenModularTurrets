@@ -59,19 +59,12 @@ public class ConfigureGui extends GuiContainer {
         this.buttonList.add(new GuiButton(6, x + 10, y + 135, 20, 20, "<<"));
         this.buttonList.add(new GuiButton(7, x + 145, y + 135, 20, 20, ">>"));
 
-        if (this.base.getTrustedPlayers().size() > 0) {
-            this.buttonList.add(new GuiButton(8, x + 70, y + 135, 23, 20, this.base.getTrustedPlayers().get(
-                    base.trustedPlayerIndex).canOpenGUI ? "\u00A72Y" : "\u00A7cN"));
-            this.buttonList.add(new GuiButton(9, x + 93, y + 135, 23, 20, this.base.getTrustedPlayers().get(
-                    base.trustedPlayerIndex).canChangeTargeting ? "\u00A72Y" : "\u00A7cN"));
-            this.buttonList.add(new GuiButton(10, x + 116, y + 135, 23, 20, this.base.getTrustedPlayers().get(
-                    base.trustedPlayerIndex).admin ? "\u00A72Y" : "\u00A7cN"));
-        } else {
-            this.buttonList.add(new GuiButton(999, x + 70, y + 135, 23, 20, "?"));
-            this.buttonList.add(new GuiButton(999, x + 93, y + 135, 23, 20, "?"));
-            this.buttonList.add(new GuiButton(999, x + 116, y + 135, 23, 20, "?"));
-        }
-    }
+    
+     this.buttonList.add(new GuiButton(8, x + 70, y + 135, 23, 20));
+       this.buttonList.add(new GuiButton(9, x + 93, y + 135, 23, 20));
+      this.buttonList.add(new GuiButton(10, x + 116, y + 135, 23, 20));
+  
+  
 
     public void mouseClicked(int i, int j, int k) {
         super.mouseClicked(i, j, k);
