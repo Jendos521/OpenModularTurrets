@@ -67,9 +67,9 @@ public class ConfigureGui extends GuiContainer {
             this.buttonList.add(new GuiButton(10, x + 116, y + 135, 23, 20, this.base.getTrustedPlayers().get(
                     base.trustedPlayerIndex).admin ? "\u00A72Y" : "\u00A7cN"));
         } else {
-            this.buttonList.add(new GuiButton(999, x + 70, y + 135, 23, 20, "?"));
-            this.buttonList.add(new GuiButton(999, x + 93, y + 135, 23, 20, "?"));
-            this.buttonList.add(new GuiButton(999, x + 116, y + 135, 23, 20, "?"));
+            this.buttonList.add(new GuiButton(8, x + 70, y + 135, 23, 20, "?"));
+            this.buttonList.add(new GuiButton(9, x + 93, y + 135, 23, 20, "?"));
+            this.buttonList.add(new GuiButton(10, x + 116, y + 135, 23, 20, "?"));
         }
     }
 
